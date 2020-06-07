@@ -1,5 +1,5 @@
 var express = require('express');
-var todoController = require('../../controllers/todoController');
+var todoController = require('./controllers/todoController');
 var app = express();
 
 ///set up ejs
@@ -12,5 +12,5 @@ app.use(express.static('./public'))
 todoController(app);
 
 //port 
-app.listen(3000);
-console.log('listening to port 3000');
+app.listen(8000);
+console.log('listening to port 8000');
