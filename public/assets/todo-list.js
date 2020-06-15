@@ -11,7 +11,7 @@ $(document).ready(function(){
         data: todo,
         success: function(data){
           //do something with the data via front-end framework
-          location.reload();
+          window.location.reload();
         }
       });
 
@@ -26,7 +26,7 @@ $(document).ready(function(){
         url: '/todo/' + item,
         success: function(data){
           //do something with the data via front-end framework
-          location.reload();
+         window.location.reload();
         }
       });
   });
